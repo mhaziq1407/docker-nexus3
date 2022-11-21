@@ -77,7 +77,6 @@ RUN echo "#!/bin/bash" >> ${SONATYPE_DIR}/start-nexus-repository-manager.sh \
    && echo "exec ./bin/nexus run" >> ${SONATYPE_DIR}/start-nexus-repository-manager.sh \
    && chmod a+x ${SONATYPE_DIR}/start-nexus-repository-manager.sh
 
-RUN microdnf remove -y tar gzip shadow-utils
 
 VOLUME ${NEXUS_DATA}
 
